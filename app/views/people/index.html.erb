@@ -1,12 +1,12 @@
-<h1>Listing people</h1>
+<h1>Listando Personas</h1>
 
 <table>
   <tr>
-    <th>Code</th>
-    <th>Lastname</th>
-    <th>Firstname</th>
-    <th>Birthdate</th>
-    <th>Status</th>
+    <th>DNI</th>
+    <th>Apellidos</th>
+    <th>Nombres</th>
+    <th>Fecha de Nacimiento</th>
+    <th>Estado</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,13 +19,13 @@
     <td><%= person.firstname %></td>
     <td><%= person.birthdate %></td>
     <td><%= person.status %></td>
-    <td><%= link_to 'Show', person %></td>
-    <td><%= link_to 'Edit', edit_person_path(person) %></td>
-    <td><%= link_to 'Destroy', person, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Mostrar', person %></td>
+    <td><%= link_to 'Modificar', edit_person_path(person) %></td>
+    <td><%= link_to 'Eliminar', person, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Person', new_person_path %>
+<%= link_to 'Agregar Persona', new_person_path %>

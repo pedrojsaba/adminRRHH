@@ -1,30 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Code:</b>
+  <b>DNI:</b>
   <%= @person.code %>
 </p>
 
 <p>
-  <b>Lastname:</b>
+  <b>Apellidos:</b>
   <%= @person.lastname %>
 </p>
 
 <p>
-  <b>Firstname:</b>
+  <b>Nombres:</b>
   <%= @person.firstname %>
 </p>
 
 <p>
-  <b>Birthdate:</b>
+  <b>F.Nacimiento:</b>
   <%= @person.birthdate %>
 </p>
 
 <p>
-  <b>Status:</b>
+  <b>Estado:</b>
   <%= @person.status %>
 </p>
 
 
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', people_path %>
+<%= link_to 'Modificar', edit_person_path(@person) %> |
+<%= link_to 'Atras', people_path %>
