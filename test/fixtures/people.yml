@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  code: MyString
+  lastname: MyString
+  firstname: MyString
+  birthdate: 2012-01-04
+  status: false
+
+two:
+  code: MyString
+  lastname: MyString
+  firstname: MyString
+  birthdate: 2012-01-04
+  status: false
