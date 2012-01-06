@@ -2,10 +2,8 @@
 
 one:
   code: MyString
-  month: 1
-  year: 1
+  name: MyString
 
 two:
   code: MyString
-  month: 1
-  year: 1
+  name: MyString

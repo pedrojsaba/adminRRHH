@@ -12,8 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :scode %><br />
-    <%= f.text_field :scode %>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br />
+    <%= f.number_field :month %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.number_field :year %>
   </div>
   <div class="actions">
     <%= f.submit %>

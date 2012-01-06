@@ -1,8 +1,10 @@
-<h1>Listing periods</h1>
+<h2>Listando Periodos</h2>
 
 <table>
   <tr>
-    <th>Scode</th>
+    <th>Code</th>
+    <th>Month</th>
+    <th>Year</th>
     <th></th>
     <th></th>
     <th></th>
@@ -10,7 +12,9 @@
 
 <% @periods.each do |period| %>
   <tr>
-    <td><%= period.scode %></td>
+    <td><%= period.code %></td>
+    <td><%= period.month %></td>
+    <td><%= period.year %></td>
     <td><%= link_to 'Show', period %></td>
     <td><%= link_to 'Edit', edit_period_path(period) %></td>
     <td><%= link_to 'Destroy', period, confirm: 'Are you sure?', method: :delete %></td>

@@ -11,9 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120104052523) do
+ActiveRecord::Schema.define(:version => 20120106044846) do
 
   create_table "companies", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contracts", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.string   "title"
+    t.string   "body"
+    t.string   "footer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "entities", :force => true do |t|
     t.string   "code"
     t.string   "name"
     t.datetime "created_at"
@@ -31,7 +48,9 @@ ActiveRecord::Schema.define(:version => 20120104052523) do
   end
 
   create_table "periods", :force => true do |t|
-    t.string   "scode"
+    t.string   "code"
+    t.integer  "month"
+    t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

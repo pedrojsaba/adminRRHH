@@ -5,10 +5,55 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+     <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
 </head>
 <body>
 
-<%= yield %>
+	<div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">AdminRRHH</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <p class="pull-right">Logged in as <a href="#">username</a></p>
+        </div>
+      </div>
+    </div>
+
+ <div class="container-fluid">
+	<div class="sidebar">
+        <div class="well">
+          <h5>Entidades</h5>
+          <ul>
+            <li><%= link_to "Compañias", "/companies" %></li>
+            <li><%= link_to "Contratos", "/contracts" %></li>
+            <li><%= link_to "Entidades", "/entities" %></li>
+            <li><%= link_to "Periodos", "/periods" %></li>
+            <li><%= link_to "Personas", "/people" %></li>
+            </ul>
+        </div>
+	</div>
+
+	<div class="content">
+        <div class="hero-unit">
+          <%= yield %>
+        </div>
+        
+        <footer>
+          <p>&copy; Company 2012</p>
+        </footer>
+    </div>
+</div>
+
+
 
 </body>
 </html>
