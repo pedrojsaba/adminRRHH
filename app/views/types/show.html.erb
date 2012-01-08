@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @type.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @type.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @type.status %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%= @type.entity_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_type_path(@type) %> |
+<%= link_to 'Back', types_path %>

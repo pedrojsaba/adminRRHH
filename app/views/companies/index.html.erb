@@ -1,9 +1,9 @@
 <h2>Listando Compañias</h2>
 
-<table>
+<table class="zebra-striped">
   <tr>
-    <th>Code</th>
-    <th>Name</th>
+    <th>RUC</th>
+    <th>Razón Social</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= company.code %></td>
     <td><%= company.name %></td>
-    <td><%= link_to 'Show', company %></td>
-    <td><%= link_to 'Edit', edit_company_path(company) %></td>
-    <td><%= link_to 'Destroy', company, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Mostrar', company %></td>
+    <td><%= link_to 'Editar', edit_company_path(company) %></td>
+    <td><%= link_to 'Eliminar', company, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Company', new_company_path %>
+<%= link_to 'Nueva Compañia', new_company_path %>

@@ -10,16 +10,23 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :code %><br />
-    <%= f.text_field :code %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <form>
+    <fieldset>
+      <div class="clearfix">
+        <%= f.label :Ruc %>
+        <div class="input">
+          <%= f.text_field :code %>
+        </div>
+      </div>
+      <div class="clearfix">
+        <%= f.label :"Razón Social" %>
+        <div class="input">
+          <%= f.text_field :name %>
+        </div>
+      </div>
+      <div class="well">
+        <%= f.submit %>
+      </div>
+    </fieldset>
+  </form>
 <% end %>

@@ -1,4 +1,6 @@
 AdminRRHH::Application.routes.draw do
+  resources :types
+
   resources :periods
 
   resources :entities
