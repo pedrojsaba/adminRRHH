@@ -1,0 +1,29 @@
+<h2>Listando conceptos</h2>
+
+<table  class="zebra-striped">
+  <tr>
+    <th>Código</th>
+    <th>Nombre</th>
+    <th>Abreviatura</th>
+    <th>Estado</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @concepts.each do |concept| %>
+  <tr>
+    <td><%= concept.code %></td>
+    <td><%= concept.name %></td>
+    <td><%= concept.mininame %></td>
+    <td><%= concept.status %></td>
+    <td><%= link_to 'Show', concept %></td>
+    <td><%= link_to 'Edit', edit_concept_path(concept) %></td>
+    <td><%= link_to 'Destroy', concept, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Concept', new_concept_path %>

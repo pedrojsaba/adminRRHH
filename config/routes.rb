@@ -1,4 +1,6 @@
 AdminRRHH::Application.routes.draw do
+  resources :concepts
+
   resources :types
 
   resources :periods

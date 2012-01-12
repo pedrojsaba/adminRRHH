@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @concept.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @concept.name %>
+</p>
+
+<p>
+  <b>Mininame:</b>
+  <%= @concept.mininame %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @concept.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_concept_path(@concept) %> |
+<%= link_to 'Back', concepts_path %>
