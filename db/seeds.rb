@@ -5,8 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#Person.create(code: '42647582', lastname: 'Jancachagua Saba', firstname: 'Pedro Jancachagua', birthdate: '20/09/1984', status: 1)
-#Person.create(code: '42592592', lastname: 'Canpos Bendezu', firstname: 'Cynthia Edith', birthdate: '03/09/1984', status: 1)
+Person.create(code: '42647582', lastname: 'Jancachagua Saba', firstname: 'Pedro Jancachagua', birthdate: '20/09/1984', status: 1)
+Person.create(code: '42592592', lastname: 'Canpos Bendezu', firstname: 'Cynthia Edith', birthdate: '03/09/1984', status: 1)
 
 
 Concept.create(code: '0101', name: 'ALIMENTACION PRINCIPAL EN DINERO', mininame: 'ALIMENTACION PRINCIPA', status: 1)
