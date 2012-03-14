@@ -16,7 +16,7 @@
     <td><%= type.code %></td>
     <td><%= type.name %></td>
     <td><%= type.status %></td>
-    <td><%= type.entity %></td>
+    <td><%= type.entity.name %></td>
     <td><%= link_to 'Show', type %></td>
     <td><%= link_to 'Edit', edit_type_path(type) %></td>
     <td><%= link_to 'Destroy', type, confirm: 'Are you sure?', method: :delete %></td>

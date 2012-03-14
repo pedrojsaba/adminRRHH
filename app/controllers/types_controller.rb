@@ -25,16 +25,18 @@ class TypesController < ApplicationController
   # GET /types/new.json
   def new
     @type = Type.new
-
+    @entities = Entity.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @type }
+      format.json { render json: @entities }
     end
   end
 
   # GET /types/1/edit
   def edit
     @type = Type.find(params[:id])
+    @entities = Entity.all
   end
 
   # POST /types
