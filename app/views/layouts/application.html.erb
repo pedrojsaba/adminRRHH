@@ -34,6 +34,11 @@
 
   $(function() {
     $( "#accordion" ).accordion();
+    $("#accordion div.ui-accordion-content a").each(function(i ,e){ 
+    if($(e).attr("href") == window.location.pathname){
+      $(e).closest("div.ui-accordion-content").prev().find("a").click();
+    }
+  });
   });
   </script>
 
